@@ -20,6 +20,7 @@
 	</style>
 </head>
 <body>
+	<%@ include file="header.jsp" %>
 
 	<% 
 	// Get customer id

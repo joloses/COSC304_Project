@@ -41,6 +41,7 @@
 
 <h1>Order List</h1>
 
+<%@ include file="header.jsp" %>
 <%
 try {
     Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
