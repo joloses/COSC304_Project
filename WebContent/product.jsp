@@ -6,7 +6,7 @@
 
 <html>
 <head>
-<title>AJ Grocery - Product Information</title>
+<title>AJ SPORTS - Product Information</title>
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <style>
 	body {
@@ -14,6 +14,11 @@
 			color: #5D5348; 
 			font-family: Arial, sans-serif;
 	}
+
+    img {
+            width: 25%;
+            height: auto;
+    }
 	</style>
 </head>
 <body>
