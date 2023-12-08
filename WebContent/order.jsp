@@ -124,7 +124,7 @@
 				out.println("<h1>Your order reference number is: "+orderId+"</h1>");
 				out.println("<h1>Shipping to customer: "+custId+" Name: "+custName+"</h1>");
 	
-				out.println("<h2><a href=\"shop.html\">Return to shopping</a></h2>");
+				out.println("<h2><a href=\"index.jsp\">Return to shopping</a></h2>");
 				
 				// Clear session variables (cart)
 				session.setAttribute("productList", null);

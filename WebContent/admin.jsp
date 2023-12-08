@@ -18,6 +18,7 @@
 <%@ include file="auth.jsp" %>
 <%@ include file="jdbc.jsp" %>
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ include file="header.jsp" %>
 
 <%
 // TODO: Write SQL query that prints out total order amount by day
