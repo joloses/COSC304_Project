@@ -17,6 +17,7 @@
 	} else {
 		out.println("<h1 align=\"center\">Welcome to AJ Sports!</h1>");
 		out.println("<h2 align=\"center\"><a href='login.jsp'>Login</a></h2>");
+		out.println("<h2 align=\"center\"><a href='createAccount.jsp'>Sign Up</a></h2>");
 		out.println("<h2 align=\"center\"><a href='listprod.jsp'>Begin Shopping</a></h2>");
 		out.println("<h2 align=\"center\"><a href='listorder.jsp'>List All Orders</a></h2>");
 	}
