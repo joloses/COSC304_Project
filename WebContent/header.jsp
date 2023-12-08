@@ -30,7 +30,7 @@
     </style>
     <div class="topnav">
         <a class="active" href="index.jsp">Home</a>
-        <a href="listpord.jsp">Products</a>
+        <a href="listprod.jsp">Products</a>
         <a href="showcart.jsp">Cart</a>
         <a href="logout.jsp">Log Out</a>
       </div>
