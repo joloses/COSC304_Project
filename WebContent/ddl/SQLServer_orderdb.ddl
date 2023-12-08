@@ -143,19 +143,19 @@ CREATE TABLE review (
         ON UPDATE CASCADE ON DELETE CASCADE
 );
 
-INSERT INTO category(categoryName) VALUES ('Beverages');
-INSERT INTO category(categoryName) VALUES ('Condiments');
-INSERT INTO category(categoryName) VALUES ('Dairy Products');
-INSERT INTO category(categoryName) VALUES ('Produce');
-INSERT INTO category(categoryName) VALUES ('Meat/Poultry');
-INSERT INTO category(categoryName) VALUES ('Seafood');
-INSERT INTO category(categoryName) VALUES ('Confections');
-INSERT INTO category(categoryName) VALUES ('Grains/Cereals');
+INSERT INTO category(categoryName) VALUES ('Shoes');
+INSERT INTO category(categoryName) VALUES ('Socks');
+INSERT INTO category(categoryName) VALUES ('Tops');
+INSERT INTO category(categoryName) VALUES ('Bottoms');
+INSERT INTO category(categoryName) VALUES ('Arm Acessories');
+INSERT INTO category(categoryName) VALUES ('Leg Accessories');
+INSERT INTO category(categoryName) VALUES ('Head Accessories');
+INSERT INTO category(categoryName) VALUES ('Equipment');
 
-INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Chai', 1, '10 boxes x 20 bags',18.00);
-INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Chang',1,'24 - 12 oz bottles',19.00);
-INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Aniseed Syrup',2,'12 - 550 ml bottles',10.00);
-INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Chef Anton''s Cajun Seasoning',2,'48 - 6 oz jars',22.00);
+INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Basketball Shoes', 1, 'For indoor use; increase vertical jump by 5'!',90.00);
+INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Hiking Boots',1,'Perfect for day hikes!',120.00);
+INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Wool Socks',2,'Guaranteed to keep your feet warm!',7.00);
+INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Soccer Socks',2,'Long socks used for soccer!',5.00);
 INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Chef Anton''s Gumbo Mix',2,'36 boxes',21.35);
 INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Grandma''s Boysenberry Spread',2,'12 - 8 oz jars',25.00);
 INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Uncle Bob''s Organic Dried Pears',4,'12 - 1 lb pkgs.',30.00);
@@ -180,7 +180,7 @@ INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Bost
 INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Jack''s New England Clam Chowder',6,'12 - 12 oz cans',9.65);
 INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Singaporean Hokkien Fried Mee',8,'32 - 1 kg pkgs.',14.00);
 INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Louisiana Fiery Hot Pepper Sauce',2,'32 - 8 oz bottles',21.05);
-INSERT product(productName, categoryId, productDesc, productPrice) VALUES ('Laughing Lumberjack Lager',1,'24 - 12 oz bottles',14.00);
+
 
 INSERT INTO warehouse(warehouseName) VALUES ('Main warehouse');
 INSERT INTO productInventory(productId, warehouseId, quantity, price) VALUES (1, 1, 5, 18);
