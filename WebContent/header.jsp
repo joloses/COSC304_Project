@@ -23,3 +23,13 @@
         }
     </style>
 </head>
+<body>
+
+
+  <header>
+      <a href="index.jsp">Home</a>
+      <a href="listprod.jsp">Products</a>
+      <a href="showcart.jsp">Cart</a>
+      <a href="logout.jsp">Logout</a>
+  </header>
+  </body>
