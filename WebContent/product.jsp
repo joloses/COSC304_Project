@@ -28,6 +28,7 @@
     double productPrice = 0.0;
     String productImageURL = "";
     String productImage = "";
+    String productDesc = "";
 
     String sql = "";
 
@@ -46,6 +47,7 @@
             productPrice = rst.getDouble("productPrice");
             productImageURL = rst.getString("productImageURL");
             productImage = rst.getString("productImage");
+            productDesc = rst.getString("productDesc");
         }
 
         out.println("<h1>" + productName + "</h1>");
@@ -58,7 +60,9 @@
         }
 
         out.println("<br><b> Id:</b> " + productId);
+        out.println("<br><b> Description:</b> " + productDesc);
         out.println("<br><b> Price:</b> " + NumberFormat.getCurrencyInstance(Locale.US).format(productPrice) + "<br><br>");
+        
 
         out.println("<h4><a href='addcart.jsp?id=" + productId + "&name=" + productName + "&price=" + productPrice + "'>Add to Cart</a></h4>");
         out.println("<h4><a href='listprod.jsp'>Continue Shopping</a></h4>");
