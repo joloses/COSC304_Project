@@ -9,7 +9,7 @@
 
 <html>
 <head>
-<title>AJ Grocery Shipment Processing</title>
+<title>AJ SPORTS Shipment Processing</title>
 <style>
 	body {
 			background-color: #8F9779; 

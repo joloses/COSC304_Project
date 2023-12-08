@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>AJ Grocery</title>
+    <title>AJ SPORTS</title>
     <style>
         body {
             background-color: #8F9779; 

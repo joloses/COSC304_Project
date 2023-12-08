@@ -10,7 +10,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>AJ Grocery Order Processing</title>
+<title>AJ SPORTS Order Processing</title>
 <style>
 	body {
 			background-color: #8F9779; 

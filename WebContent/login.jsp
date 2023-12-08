@@ -2,6 +2,26 @@
 <html>
 <head>
 <title>Login Screen</title>
+<style>
+	body {
+		background-color: #8F9779; 
+		color: #5D5348; 
+		font-family: Arial, sans-serif;
+	}
+
+	table {
+		border: 1px solid #5D5348; 
+		border-collapse: collapse;
+		width: 100%;
+		margin-top: 20px;
+	}
+
+	th, td {
+		border: 1px solid #5D5348;
+		padding: 8px;
+		text-align: left;
+	}
+</style>
 </head>
 <body>
 
