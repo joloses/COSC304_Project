@@ -62,6 +62,70 @@ try {
 </table>
 
 <%
+		con.setAutoCommit(false);
+	
+	String userId = (String) session.getAttribute("authenticatedUser");
+// TODO: Print Customer information
+	String sql1 = "SELECT customerId, firstName, lastName, email, phonenum, address, city, state, postalCode, country, userid FROM customer";
+	PreparedStatement ps = con.prepareStatement(sql1);
+	ResultSet rst = ps.executeQuery();
+
+	while (rst.next()) {
+%>
+
+		<h1>Customer Profile</h1>
+	<table border="1">
+        <tr>
+            <th>ID</th>
+            <td><%= rst.getInt("customerId") %></td>
+        </tr>
+        <tr>
+            <th>First Name</th>
+            <td><%= rst.getString("firstName") %></td>
+        </tr>
+        <tr>
+            <th>Last Name</th>
+            <td><%= rst.getString("lastName") %></td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td><%= rst.getString("email") %></td>
+        </tr>
+        <tr>
+            <th>Phone</th>
+            <td><%= rst.getString("phonenum") %></td>
+        </tr>
+        <tr>
+            <th>Address</th>
+            <td><%= rst.getString("address") %></td>
+        </tr>
+        <tr>
+            <th>City</th>
+            <td><%= rst.getString("city") %></td>
+        </tr>
+        <tr>
+            <th>State</th>
+            <td><%= rst.getString("state") %></td>
+        </tr>
+        <tr>
+            <th>Postal Code</th>
+            <td><%= rst.getString("postalCode") %></td>
+        </tr>
+        <tr>
+            <th>Country</th>
+            <td><%= rst.getString("country") %></td>
+        </tr>
+        <tr>
+            <th>User ID</th>
+            <td><%= rst.getString("userid") %></td>
+        </tr>
+    </table>
+
+<%
+}
+	con.commit();
+    %>
+<%
 } catch (SQLException ex) {
     out.println("Error: " + ex.getMessage());
 } finally {
