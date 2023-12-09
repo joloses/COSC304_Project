@@ -2,6 +2,13 @@
 <html>
 <head>
         <title>AJ Sports Main Page</title>
+		<style>
+			body {
+					background-color: #8F9779; 
+					color: #5D5348; 
+					font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			}
+			</style>
 </head>
 <body>
 
@@ -27,13 +34,7 @@
 
 <h4 align="center"><a href="ship.jsp?orderId=3">Test Ship orderId=3</a></h4>
 
-<style>
-	body {
-			background-color: #8F9779; 
-			color: #5D5348; 
-			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	}
-	</style>
+
 
 </body>
 </head>
