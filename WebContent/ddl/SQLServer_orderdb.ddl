@@ -76,6 +76,16 @@ CREATE TABLE product (
     PRIMARY KEY (productId),
     FOREIGN KEY (categoryId) REFERENCES category(categoryId)
 );
+CREATE TABLE productreviews (
+    reviewId INT IDENTITY,
+    productId INT,
+    reviewerName VARCHAR(50),
+    reviewText TEXT,
+    rating INT, 
+    PRIMARY KEY (reviewId),
+    FOREIGN KEY (productId) REFERENCES product(productId)
+);
+
 
 CREATE TABLE orderproduct (
     orderId             INT,
@@ -142,6 +152,7 @@ CREATE TABLE review (
     FOREIGN KEY (productId) REFERENCES product(productId)
         ON UPDATE CASCADE ON DELETE CASCADE
 );
+
 
 INSERT INTO category(categoryName) VALUES ('Shoes');
 INSERT INTO category(categoryName) VALUES ('Socks');
