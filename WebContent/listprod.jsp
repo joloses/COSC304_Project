@@ -11,6 +11,7 @@
             background-color: #8F9779; 
             color: #5D5348; 
             font-family: Arial, sans-serif;
+			margin: 0;
         }
 
         table {

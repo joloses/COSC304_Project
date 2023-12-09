@@ -4,6 +4,10 @@
     <title>Header</title>
     <style>
 
+        body {
+            margin: 0;
+        }
+
         a {
             color: #5D5348;
             text-decoration: none;
